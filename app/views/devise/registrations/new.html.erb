@@ -6,6 +6,12 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%# el autofocus:true sirve para al cargar la vista, el cursor se coloca ahi %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autocomplete: "name" %>
   </div>
 
   <div class="field">
