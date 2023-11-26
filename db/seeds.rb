@@ -13,7 +13,8 @@ puts "Hotel creado"
     length: rand(10), # El rand toma automatico el tipo de dato y sobre eso hace lo random
     width: rand(10),
     taken: rand(2), # Como es un valor booleano, ponemos random 2 opciones o 0 o 1
-    image: Faker::Internet.url,
+    image: "http://placehold.it/700x400",
+    description: Faker::Lorem.sentence(word_count: 100), # texto random de 100 palabras
     hotel_id: Hotel.first.id
   )
 end
