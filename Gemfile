@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.6'
+ruby '2.7.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
@@ -46,3 +46,14 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'faker', '~> 3.2', '>= 3.2.2'
+gem 'bootstrap', '~> 5.3', '>= 5.3.2'
+gem 'jquery-rails'
+gem 'petergate', '~> 3.0'
+
+gem 'carrierwave', '~> 2.2', '>= 2.2.1'
+gem 'mini_magick', '~> 4.11'
+gem 'carrierwave-aws', '~> 1.5'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
