@@ -46,7 +46,7 @@ class RoomsController < ApplicationController
     @room.destroy
 
     respond_to do |format|
-      format.thml { redirec_to root_url,
+      format.thml { redirect_to rooms_path,
                     notice: 'Habitacion eliminada' }
     end
   end
