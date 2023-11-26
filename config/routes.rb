@@ -12,8 +12,13 @@ Rails.application.routes.draw do
     sign_up: 'register'
   }
   
-  resources :rooms
-  root to: 'pages#home'
+  resources :rooms do
+    member do
+      get :reserve
+    end
+  end
+
+  root to: 'pages#index'
 
   get "home", to: 'pages#home' # /home
   get "about", to: 'pages#about' # /about

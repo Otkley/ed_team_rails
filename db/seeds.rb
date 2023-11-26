@@ -8,6 +8,7 @@ Hotel.create!(
 
 puts "Hotel creado"
 
+=begin
 25.times do
   Room.create!(
     length: rand(10), # El rand toma automatico el tipo de dato y sobre eso hace lo random
@@ -20,5 +21,6 @@ puts "Hotel creado"
 end
 
 puts "Habitaciones creadas"
+=end
 
 # Se ejecuta: rails db:setup despues de crear y migrar

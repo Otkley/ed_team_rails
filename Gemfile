@@ -52,3 +52,8 @@ gem 'faker', '~> 3.2', '>= 3.2.2'
 gem 'bootstrap', '~> 5.3', '>= 5.3.2'
 gem 'jquery-rails'
 gem 'petergate', '~> 3.0'
+
+gem 'carrierwave', '~> 2.2', '>= 2.2.1'
+gem 'mini_magick', '~> 4.11'
+gem 'carrierwave-aws', '~> 1.5'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
